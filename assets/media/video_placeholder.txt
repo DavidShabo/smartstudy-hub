@@ -1,0 +1,33 @@
+# SmartStudy Hub - Video Content
+
+## Required Videos (3+ total)
+
+### 1. intro.mp4 - Welcome/Introduction Video
+- Duration: 2-3 minutes
+- Content: Welcome to SmartStudy Hub, platform overview
+- Format: MP4, 720p or 1080p
+- File size: < 50MB
+
+### 2. walkthrough.mp4 - Platform Walkthrough
+- Duration: 5-7 minutes
+- Content: How to book sessions, use features, navigate site
+- Format: MP4, 720p or 1080p
+- File size: < 100MB
+
+### 3. podcast.mp3 - Educational Podcast
+- Duration: 10-15 minutes
+- Content: Study tips, learning strategies, success stories
+- Format: MP3, 128kbps or higher
+- File size: < 20MB
+
+## Video Sources (Free/Copyright Free)
+- Pexels: https://www.pexels.com/videos/
+- Pixabay: https://pixabay.com/videos/
+- Unsplash: https://unsplash.com/s/photos/education
+- YouTube Creative Commons
+
+## Implementation
+Add these videos to the following pages:
+- intro.mp4: Homepage hero section
+- walkthrough.mp4: Help section
+- podcast.mp3: About page or dedicated podcast section 

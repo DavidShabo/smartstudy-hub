@@ -1,5 +1,7 @@
 <?php
-// D.S: Database connection
+// D.S: Database connection - Central configuration for MySQL database
+// Developer: [Your Name] - D.S
+// Handles all database connections throughout the application
 $host = 'localhost';
 $user = 'root';
 $pass = '';

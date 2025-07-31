@@ -1,0 +1,41 @@
+# SmartStudy Hub - Required Images (20+ total)
+
+## Main Images
+1. logo.png (main logo)
+2. favicon.ico (site icon)
+3. hero-bg.jpg (homepage background)
+4. about-bg.jpg (about page background)
+5. contact-bg.jpg (contact page background)
+
+## Subject/Service Images
+6. math-tutor.jpg (mathematics tutoring)
+7. physics-tutor.jpg (physics tutoring)
+8. chemistry-tutor.jpg (chemistry tutoring)
+9. biology-tutor.jpg (biology tutoring)
+10. english-tutor.jpg (English literature)
+11. computer-science-tutor.jpg (computer science)
+12. history-tutor.jpg (history tutoring)
+13. geography-tutor.jpg (geography tutoring)
+
+## UI/UX Images
+14. student-avatar.jpg (default student avatar)
+15. tutor-avatar.jpg (default tutor avatar)
+16. admin-avatar.jpg (default admin avatar)
+17. session-booking.jpg (booking illustration)
+18. online-class.jpg (online class illustration)
+19. study-group.jpg (study group illustration)
+20. certificate.jpg (certificate/achievement)
+21. dashboard-icon.png (dashboard icon)
+22. calendar-icon.png (calendar icon)
+23. book-icon.png (book icon)
+24. video-icon.png (video icon)
+
+## Additional Images
+25. testimonial-1.jpg (student testimonial photo)
+26. testimonial-2.jpg (student testimonial photo)
+27. testimonial-3.jpg (student testimonial photo)
+28. help-icon.png (help section icon)
+29. settings-icon.png (settings icon)
+30. profile-icon.png (profile icon)
+
+Total: 30 images (exceeds the 20 requirement) 
