@@ -24,7 +24,7 @@ if ($_POST) {
     }
     
     if ($selected_subject) {
-        $base_price = $selected_subject['price'];
+        $base_price = $selected_subject['price'] ?? 25.00;
         
         // Calculate multipliers
         $level_multiplier = 1.0;
@@ -51,6 +51,24 @@ if ($_POST) {
 }
 
 $subjects = getAllSubjects();
+
+// If database connection fails, use fallback data
+if (empty($subjects)) {
+    $subjects = [
+        ['name' => 'Mathematics', 'price' => 25.00],
+        ['name' => 'Physics', 'price' => 30.00],
+        ['name' => 'Chemistry', 'price' => 28.00],
+        ['name' => 'English Literature', 'price' => 22.00],
+        ['name' => 'Biology', 'price' => 26.00],
+        ['name' => 'Computer Science', 'price' => 35.00],
+        ['name' => 'History', 'price' => 20.00],
+        ['name' => 'Geography', 'price' => 18.00],
+        ['name' => 'Economics', 'price' => 32.00],
+        ['name' => 'French Language', 'price' => 24.00],
+        ['name' => 'Art & Design', 'price' => 27.00],
+        ['name' => 'Music Theory', 'price' => 29.00]
+    ];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +78,7 @@ $subjects = getAllSubjects();
     <meta name="description" content="Get a quote for tutoring services - SmartStudy Hub">
     <meta name="keywords" content="quote, calculator, tutoring, pricing, SmartStudy Hub">
     <title>Quote Calculator - SmartStudy Hub</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/theme-dark.css">
     <link rel="stylesheet" href="../assets/css/theme-seasonal.css">
 </head>
@@ -83,7 +101,7 @@ $subjects = getAllSubjects();
                     <li><a href="login.php">Login</a></li>
                     <li><a href="register.php">Register</a></li>
                 <?php endif; ?>
-                <li><a href="help/">Help</a></li>
+                <li><a href="help.php">Help</a></li>
             </ul>
             <div class="theme-switcher">
                 <button onclick="toggleTheme()" class="btn btn-sm">🎨 Theme</button>
@@ -105,8 +123,8 @@ $subjects = getAllSubjects();
                             <select id="subject" name="subject" required onchange="updatePrice()">
                                 <option value="">Select a subject</option>
                                 <?php foreach ($subjects as $subject): ?>
-                                    <option value="<?= $subject['name'] ?>" data-price="<?= $subject['price'] ?>" <?= ($_POST['subject'] ?? '') === $subject['name'] ? 'selected' : '' ?>>
-                                        <?= $subject['name'] ?> - $<?= number_format($subject['price'], 2) ?>/hour
+                                    <option value="<?= $subject['name'] ?>" data-price="<?= $subject['price'] ?? 25.00 ?>" <?= ($_POST['subject'] ?? '') === $subject['name'] ? 'selected' : '' ?>>
+                                        <?= $subject['name'] ?> - $<?= number_format($subject['price'] ?? 25.00, 2) ?>/hour
                                     </option>
                                 <?php endforeach; ?>
                             </select>

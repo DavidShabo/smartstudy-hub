@@ -33,7 +33,7 @@ include_once(__DIR__ . '/../config/config.php');
                     <li><a href="login.php">Login</a></li>
                     <li><a href="register.php">Register</a></li>
                 <?php endif; ?>
-                <li><a href="help/">Help</a></li>
+                <li><a href="help.php">Help</a></li>
             </ul>
             <div class="theme-switcher">
                 <button onclick="toggleTheme()" class="btn btn-sm">🎨 Theme</button>

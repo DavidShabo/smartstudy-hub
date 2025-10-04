@@ -2,11 +2,12 @@
 // D.S: Database connection configuration
 // Database connection settings for SmartStudy Hub
 
-// Database configuration
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'smartstudy');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+// D.S: Database connection configuration for InfinityFree
+// Updated with actual InfinityFree database credentials
+define('DB_HOST', 'sql111.infinityfree.com');
+define('DB_NAME', 'if0_39607955_epiz_12345678_smartstudy');
+define('DB_USER', 'if0_39607955');
+define('DB_PASS', '12112004Ds');
 
 // Create database connection
 function getDBConnection() {

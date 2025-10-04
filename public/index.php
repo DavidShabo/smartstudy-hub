@@ -26,7 +26,7 @@ session_start();
                 <li><a href="index.php">Home</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="quote_calculator.php">Get Quote</a></li>
-                <li><a href="help/">Help</a></li>
+                <li><a href="help.php">Help</a></li>
                 <li><a href="admin_login.php">Admin</a></li>
                 <?php if (isset($_SESSION['user'])): ?>
                     <li><a href="profile.php">Profile</a></li>

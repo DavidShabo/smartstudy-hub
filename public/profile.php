@@ -119,7 +119,7 @@ $recent_sessions = [
                             <p>Manage your account</p>
                         </div>
                     </a>
-                    <a href="help/" class="action-btn">
+                    <a href="help.php" class="action-btn">
                         <div class="action-icon">❓</div>
                         <div class="action-text">
                             <h4>Help Center</h4>
